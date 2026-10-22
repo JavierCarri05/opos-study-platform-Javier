@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+html {
+  max-width: 100vw;
+  width: 100%;
+  overflow-x: clip;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  max-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+  overflow-x: hidden;
+  position: relative;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+}
+
+main, [role="main"] {
+  max-width: 100%;
+  overflow-x: clip !important;
+  overflow-x: hidden !important;
+  overscroll-behavior-x: none !important;
+}
+
+/* Permitir eventos estándar en elementos interactivos */
+input, textarea, select, button, a {
+  touch-action: manipulation;
+}
+
+/* Permitir scroll horizontal exclusivamente dentro de elementos con clase explícita de scroll */
+.overflow-x-auto,
+[class*="overflow-x-auto"],
+[class*="overflow-x-scroll"],
+table {
+  touch-action: auto !important;
+  overscroll-behavior-x: contain;
+}
+
+/* Evitar que palabras largas o enlaces desborden horizontalmente */
+p, span, h1, h2, h3, h4, h5, h6, a, label, li, td, th {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Protección anti-impresión para evitar exportación masiva (los administradores sí pueden imprimir) */
+@media print {
+  body:not(.is-admin) {
+    display: none !important;
+  }
+}
+
+/* Protección anti-selección en zonas de preguntas para alumnos */
+body:not(.is-admin) .study-protected,
+body:not(.is-admin) [data-protected="true"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* El administrador tiene siempre selección y copiado habilitado en toda la plataforma */
+.is-admin,
+.is-admin * {
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+}
+
+
+

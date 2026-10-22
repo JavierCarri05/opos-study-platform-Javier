@@ -1,0 +1,5 @@
+-- PERMITIR PREGUNTAS Y FLASHCARDS LIBRES (SIN OBLIGACIÓN DE BLOQUE, TEMA O SUBAPARTADO)
+-- Ejecutar en Supabase -> SQL Editor
+
+ALTER TABLE public.questions ALTER COLUMN subtopic_id DROP NOT NULL;
+ALTER TABLE public.flashcards ALTER COLUMN subtopic_id DROP NOT NULL;
