@@ -40,7 +40,7 @@ export default function HomePage() {
 
       <div className="w-full flex-1 flex items-end justify-center">
         <footer className="py-6 text-center text-xs text-slate-400 font-medium">
-          <p>© {new Date().getFullYear()} TESTCLM/CM · Policía Local y Municipal</p>
+          <p>© {new Date().getFullYear()} TEST CLM/CM · Policía Local y Municipal</p>
         </footer>
       </div>
     </main>
