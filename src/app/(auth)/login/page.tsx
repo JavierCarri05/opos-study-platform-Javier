@@ -98,7 +98,6 @@ export default function LoginPage() {
               />
             </div>
           </div>
-
           <h1 className="text-3xl font-black text-white tracking-tight">Acceso a TEST CLM/CM</h1>
           <p className="text-xs sm:text-sm font-medium text-slate-400 mt-1">Policía Local y Municipal</p>
         </div>
