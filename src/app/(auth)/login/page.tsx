@@ -91,7 +91,7 @@ export default function LoginPage() {
             <div className="relative w-38 h-38 rounded-3xl overflow-hidden hover:scale-105 transition-transform p-1">
               <Image
                 src="/iconoapp.png"
-                alt="TESTCLM/CM"
+                alt="TEST CLM/CM"
                 fill
                 className="object-contain p-1"
                 priority
