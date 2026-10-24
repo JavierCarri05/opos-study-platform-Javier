@@ -25,7 +25,7 @@ export default function HomePage() {
         <div className="w-full mb-8 flex justify-center">
           <div className="relative w-full h-40 sm:h-52 transition-transform hover:scale-105 duration-300">
             <Image
-              src="/logo-full.jpg"
+              src="/logo-fu.png"
               alt="TEST CLM/CM - Policía Local y Municipal"
               fill
               className="object-contain p-2"
@@ -39,7 +39,7 @@ export default function HomePage() {
           {/* Botón secundario oscuro */}
           <Link
             href="/login"
-            className="w-full sm:w-1/2 py-3.5 px-6 rounded-xl font-bold bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 shadow-md transition-all text-center flex items-center justify-center cursor-pointer active:scale-95"
+            className="w-full sm:w-1/2 py-3.5 px-6 rounded-xl font-bold bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all text-center flex items-center justify-center cursor-pointer active:scale-95"
           >
             Iniciar Sesión
           </Link>
